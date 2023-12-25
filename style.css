@@ -93,21 +93,13 @@ button {
     cursor: pointer;
 }
 
-.btn-sign-up,
-.btn-sign-in {
+.btn {
     background-color: var(--saturatedblue);
     color: var(--white);
 }
 
-.btn-sign-up a,
-.btn-sign-in a {
+.btn a {
     color: var(--white);
-}
-
-.btn-sign-in:hover,
-.btn-sign-up:hover {
-    background-color: var(--yellowgreen);
-    color: var(--black);
 }
 
 /* End of Navigation Styling */
@@ -119,64 +111,57 @@ button {
     justify-content: center;
     align-items: center;
     text-align: center;
-  }
-  
-  .hero-container {
+}
+
+.hero-container {
     background-image: url('./Images/image\ 1.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
-  }
+}
 
-  .hero-text {
+.hero-text {
     margin-top: 10rem;
-  }
-  
-  .hero-container h1 {
-    font-size: 36px;
+    color: var(--white);
+}
+
+.hero-container h1 {
+    font-size: 42px;
     line-height: 1.4;
     margin-bottom: 20px;
     color: var(--white);
     text-transform: capitalize;
-  }
-  
-  .hero-container p {
+}
+
+.hero-container p {
     font-size: 18px;
     line-height: 1.6;
-    margin-bottom: 30px;
-    padding: 1.5rem;
-  }
-  
-  .btn {
+    margin: auto;
+    width: 70%;
+}
+
+.btn {
     display: flex;
     justify-content: center;
-  }
-  
-  .btn button {
-    margin: 0 10px;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    background-color: #4285f4;
-    color: #fff;
-    font-size: 16px;
-    cursor: pointer;
-  }
+    margin-top: 30px;
+}
 
-  .btn1 {
+.btn1 {
     background-color: var(--yellowgreen);
-  }
-  
-  .btn button a {
+    border-radius: 8px;
+}
+
+.btn2 {
+    background-color: var(--saturatedblue);
+    border-radius: 8px;
+}
+
+button a {
     text-decoration: none;
     color: #fff;
-  }
-  
-  .btn button:hover {
-    background-color: #3367d6;
-  }
-  
+}
+
 
 @media screen and (max-width: 768px) {
     .nav-list {
