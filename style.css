@@ -61,7 +61,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 70%;
+    width: 60%;
 }
 
 nav ul li {
@@ -96,6 +96,10 @@ button {
 .btn {
     background-color: var(--saturatedblue);
     color: var(--white);
+}
+
+.btn:hover {
+    background-color: var(--yellowgreen);
 }
 
 .btn a {
@@ -152,9 +156,17 @@ button {
     border-radius: 8px;
 }
 
+.btn1:hover {
+    background-color: var(--darkblue);
+}
+
 .btn2 {
     background-color: var(--saturatedblue);
     border-radius: 8px;
+}
+
+.btn2:hover {
+    background-color: var(--lightgray);
 }
 
 button a {
@@ -168,69 +180,69 @@ button a {
     justify-content: center;
     align-items: center;
     padding: 40px;
-  }
-  
-  .about-us-container {
+}
+
+.about-us-container {
     display: flex;
     flex-direction: row;
     align-items: center;
     margin: 0 auto;
-  }
-  
-  .about-text {
+}
+
+.about-text {
     text-align: center;
     width: 50%;
     padding-right: 2.5rem;
-  }
-  
-  .about-text h1 {
+}
+
+.about-text h1 {
     font-size: 32px;
     margin-bottom: 20px;
     color: var(--darkblue);
-  }
-  
-  .about-text p {
+}
+
+.about-text p {
     margin-bottom: 20px;
-  }
-  
-  .image {
+}
+
+.image {
     margin-top: 20px;
-  }
-  
-  img {
+}
+
+img {
     max-width: 100%;
     height: auto;
     border-radius: .5rem;
-  }
+}
 
 
-  /* Advert Section Styling */
-  .advert {
+/* Advert Section Styling */
+.advert {
     display: flex;
     position: relative;
-  }
-  
-  .container {
+}
+
+.container {
     display: flex;
     flex-direction: column;
-  }
-  
-  img {
+}
+
+img {
     max-width: 100%;
     height: auto;
-  }
-  
-  .text {
+}
+
+.text {
     position: absolute;
     color: var(--white);
     margin: 12rem 5rem;
-  }
-  
-  h3 {
-    font-size: 2.8rem;
-  }
+}
 
-  /* Footer Styling */
+h3 {
+    font-size: 2.8rem;
+}
+
+/* Footer Styling */
 footer {
     position: relative;
     width: 100%;
@@ -238,70 +250,78 @@ footer {
     padding: 50px 50px;
     background-color: var(--saturatedblue);
     color: var(--white);
-  }
-  
-  .footer-container {
+}
+
+.footer-container {
     display: grid;
     width: 100%;
     grid-template-columns: 2fr 1fr 1fr 1fr;
     grid-gap: 20px;
-  }
-  
-  .footer-left p {
+}
+
+.footer-left p {
     margin-top: 1rem;
     font-size: 1rem;
     line-height: 1.2rem;
-  }
-  
-  .footer-center {
+}
+
+.footer-center {
     position: relative;
-  }
-  
-  .footer-center h3 {
+}
+
+.footer-center h3 {
     margin-bottom: 1rem;
     font-size: 1.2rem;
-  }
-  
-  .footer-center li a {
+}
+
+.footer-center li a {
     color: var(--white);
     margin-bottom: 0.5rem;
     display: inline-block;
-  }
-  
-  .footer-center li a:hover {
+}
+
+.footer-center li a:hover {
     color: var(--yellow);
-  }
-  
-  .info {
+}
+
+.info {
     position: relative;
-  }
-  
-  .info li {
+}
+
+.info li {
     display: grid;
     grid-template-columns: 30px 1fr;
     margin-bottom: 0.6rem;
-  }
-  
-  .info li span:nth-child(1) {
+}
+
+.info li span:nth-child(1) {
     font-size: 20px;
     color: var(--white);
-  }
-  
-  .info li span {
+}
+
+.info li span {
     color: var(--white);
-  }
-  
-  .info a {
+}
+
+.info a {
     color: var(--white);
-  }
-  
-  .footer-right h3 {
+}
+
+.footer-right h3 {
     margin-bottom: 1rem;
     font-size: 1.1rem;
-  }
-  
-  
-  
+}
+
+@media screen and (max-width: 1200px){
+    .text {
+        margin: 8rem 5rem;
+    }
+
+    .hero-text {
+        margin-top: 15rem;
+    }
+}
+
 
 @media screen and (max-width: 768px) {
     .nav-list {
@@ -365,8 +385,16 @@ footer {
 }
 
 @media screen and (max-width: 600px) {
+    nav {
+        padding: 1.5rem 2.5rem;
+    }
+
     .hero-container h1 {
         font-size: 22px;
+    }
+
+    .hero-text {
+        margin-top: 4rem;
     }
 
     .hero-container p {
@@ -385,5 +413,9 @@ footer {
 
     .text {
         margin: 2.3rem 1.5rem;
+    }
+
+    .footer-container {
+        grid-template-columns: auto;
     }
 }
