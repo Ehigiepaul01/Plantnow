@@ -312,6 +312,17 @@ footer {
     font-size: 1.1rem;
 }
 
+.social-links ul {
+    display: flex;
+    margin-top: 1.3rem;
+}
+
+.social-links ul a {
+    color: var(--white);
+    padding-right: .8rem;
+    font-size: 120%;
+}
+
 @media screen and (max-width: 1200px){
     .text {
         margin: 8rem 5rem;
