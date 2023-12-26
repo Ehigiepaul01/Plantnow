@@ -318,7 +318,7 @@ footer {
     }
 
     .hero-text {
-        margin-top: 15rem;
+        margin-top: 15remcle;
     }
 }
 
@@ -399,6 +399,10 @@ footer {
 
     .hero-container p {
         width: 80%;
+    }
+
+    button a {
+        font-weight: bold;
     }
 
     .about-text {
